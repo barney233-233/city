@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xi'an History</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f5f0e8;
+}
+header {
+  background: #8B4513;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: white;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+.intro {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.intro-img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.intro-text h1 {
+  color: #8B4513;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.intro-text p {
+  color: #666;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.spots-title {
+  color: #8B4513;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.spots-scroll {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+.spot-card {
+  min-width: 320px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+.spot-card:hover {
+  transform: translateY(-8px);
+}
+.spot-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.spot-card .info {
+  padding: 25px;
+}
+.spot-card h3 {
+  color: #8B4513;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.spot-card p {
+  color: #999;
+  font-size: 13px;
+}
+.spot-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">XI'AN</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="#">HISTORY</a>
+      <a href="attractions.html">ATTRACTIONS</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="images/xian-intro.jpeg" alt="Xi'an" class="intro-img">
+      <div class="intro-text">
+        <h1>Where History Began</h1>
+        <p>Xi'an, anciently known as Chang'an, served as the capital for 13 dynasties over 3,000 years. As the eastern terminus of the Silk Road, it was once the largest city in the world, welcoming traders and travelers from across Asia and Europe. Today, it stands as a living museum of Chinese civilization.</p>
+      </div>
+    </section>
+
+    <h2 class="spots-title">Historical Treasures</h2>
+    <div class="spots-scroll">
+      <div class="spot-card">
+        <a href="attractions.html">
+          <img src="images/terracotta-preview.jpeg" alt="Terracotta Army">
+          <div class="info">
+            <h3>TERRACOTTA ARMY</h3>
+            <p>Eighth Wonder of the World</p>
+          </div>
+        </a>
+      </div>
+      <div class="spot-card">
+        <a href="attractions.html">
+          <img src="images/citywall-preview.jpeg" alt="City Wall">
+          <div class="info">
+            <h3>ANCIENT CITY WALL</h3>
+            <p>Best Preserved in China</p>
+          </div>
+        </a>
+      </div>
+      <div class="spot-card">
+        <a href="attractions.html">
+          <img src="images/belltower-preview.jpeg" alt="Bell Tower">
+          <div class="info">
+            <h3>BELL TOWER</h3>
+            <p>Heart of Ancient Chang'an</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

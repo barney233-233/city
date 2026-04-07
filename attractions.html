@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xi'an Attractions</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+}
+header {
+  background: #8B4513;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: white;
+}
+.attraction {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+.attraction:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.attraction-img {
+  width: 50%;
+  object-fit: cover;
+}
+.attraction-text {
+  width: 50%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #2a2a2a;
+}
+.attraction:nth-child(even) .attraction-text {
+  background: #1a1a1a;
+}
+.attraction-text h2 {
+  color: #CD853F;
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+.attraction-text .tag {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #8B4513;
+  color: #CD853F;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+.attraction-text p {
+  color: #bbb;
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">XI'AN</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="history.html">HISTORY</a>
+      <a href="#">ATTRACTIONS</a>
+    </nav>
+  </header>
+
+  <section class="attraction">
+    <img src="images/terracotta-large.jpeg" alt="Terracotta Army" class="attraction-img">
+    <div class="attraction-text">
+      <h2>TERRACOTTA ARMY</h2>
+      <span class="tag">UNESCO WORLD HERITAGE</span>
+      <p>Discovered in 1974 by local farmers, the Terracotta Army is one of the greatest archaeological finds of the 20th century. This vast collection of over 8,000 life-sized clay soldiers, horses, and chariots was built to protect Emperor Qin Shi Huang in his afterlife.</p>
+      <p>Each figure is unique, with distinct facial features, hairstyles, and armor. The level of craftsmanship reveals the extraordinary artistic and technological achievements of the Qin Dynasty over 2,200 years ago.</p>
+    </div>
+  </section>
+
+  <section class="attraction">
+    <img src="images/citywall-large.jpeg" alt="Ancient City Wall" class="attraction-img">
+    <div class="attraction-text">
+      <h2>ANCIENT CITY WALL</h2>
+      <span class="tag">MING DYNASTY ARCHITECTURE</span>
+      <p>Built during the Ming Dynasty (1370), Xi'an's City Wall is the most complete and best-preserved ancient city defense system in China. Stretching 13.7 kilometers, it stands 12 meters high and 15 meters wide at the top.</p>
+      <p>The wall features a deep moat, drawbridges, watchtowers, and corner towers. Today, visitors can walk or cycle along the top, enjoying panoramic views of both ancient and modern Xi'an.</p>
+    </div>
+  </section>
+</body>
+</html>
